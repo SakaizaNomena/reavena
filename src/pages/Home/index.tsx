@@ -1,23 +1,14 @@
 import { Link } from "react-router-dom";
-import { useThemeStore } from "../../store/useThemeStore";
 
 const HomePage = () => {
-  const { theme, toggleTheme } = useThemeStore();
-
   return (
     <div>
-      <div className="container mx-auto px-4 py-8 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen">
+      <div className="container relative mx-auto px-4 py-8 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
         <div className="flex justify-between items-center mb-8">
-          <h1 className="text-4xl font-bold">Reavena</h1>
-          <button
-            onClick={toggleTheme}
-            className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-md"
-          >
-            {theme === 'dark' ? 'Light' : 'Dark'} Mode
-          </button>
+          <h1 className="text-9xl font-bold">Reavena</h1>
         </div>
         <div className="prose dark:prose-invert max-w-none">
-          <p>
+          <p className="text-lg">
             Une bibliothèque React moderne pour créer, tester et documenter des
             composants UI réutilisables avec un playground interactif, Zustand,
             Tailwind et Vite.
