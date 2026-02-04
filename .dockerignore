@@ -1,0 +1,17 @@
+# Dépendances et logs
+node_modules
+npm-debug.log
+
+# Fichiers de build
+dist
+build
+
+# Fichiers de configuration Docker et Git
+.git
+.gitignore
+Dockerfile
+docker-compose.yml
+
+# Fichiers sensibles ou inutiles
+needed
+README.md
