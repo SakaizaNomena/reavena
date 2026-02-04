@@ -3,13 +3,13 @@ import React, { createElement } from "react";
 import HomePages from "../pages/Home";
 import ComponentsPage from "../pages/Components";
 import ComponentDetailPage from "../pages/ComponentDetail";
-import { Laoyut } from "../pages/laoyut";
 import NotFoundPage from "../pages/NotFound";
+import { Layout } from "../pages/laoyut";
 
 const router = createBrowserRouter([
   { 
     path: "/", 
-    element: React.createElement(Laoyut),
+    element: React.createElement(Layout),
     errorElement: createElement(NotFoundPage),
     children: [
         {

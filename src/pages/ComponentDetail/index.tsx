@@ -1,5 +1,8 @@
+import { useParams } from "react-router-dom";
+
 const ComponentDetailPage = () => {
-  return <div>Component Detail Page</div>;
+  const { componentId } = useParams();
+  return <div>Component Detail Page {componentId}</div>;
 }
 
 export default ComponentDetailPage;
