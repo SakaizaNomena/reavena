@@ -32,7 +32,7 @@ const HomePage = () => {
         </div>
         <div className="mt-8 flex gap-4">
           <Link
-            to="/components"
+            to="/component/avatar"
             className="px-6 py-3 bg-blue-600 text-white rounded-md hover:bg-blue-700"
           >
             Liste de composants
