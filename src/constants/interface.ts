@@ -1,5 +1,7 @@
 export type IcomponentLists = {
   title: string;
   icon: string;
-  key: string;
+  keyItem: string;
+  activeKey?: string;
+  onClick?: (key: string) => void;
 };
