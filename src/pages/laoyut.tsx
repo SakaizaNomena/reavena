@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import { useThemeStore } from "../store/useThemeStore";
 import { useEffect } from "react";
+import { Sun, Moon } from "lucide-react";
 
 export function Layout() {
   const { theme , toggleTheme} = useThemeStore();
@@ -10,13 +11,13 @@ export function Layout() {
 }, [theme]);
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen relative">
+    <div className="relative h-screen">
       <Outlet />
       <button
         onClick={toggleTheme}
-        className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-md absolute top-4 right-4"
+        className="px-4 py-2 bg-gray-200 dark:bg-gray-800 rounded-md absolute top-4 right-4 cursor-pointer"
       >
-        {theme === 'dark' ? 'Light' : 'Dark'} Mode
+        {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
       </button>
     </div>
   );
