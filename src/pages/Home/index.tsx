@@ -21,7 +21,7 @@ const HomePage = () => {
 
   return (
     <div>
-      <div className="container relative mx-auto px-4 py-8 bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
+      <div className="container relative mx-auto px-4 py-8 text-gray-900 dark:text-gray-100 min-h-screen flex flex-col items-center justify-center">
         <div className="flex justify-between items-center mb-8">
           <h1 className="text-9xl font-bold">{animatedText}</h1>
         </div>
