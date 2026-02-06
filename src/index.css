@@ -5,15 +5,6 @@
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  /* Light mode gradients */
-  --bg-gradient-start: #d2dee1;
-  --bg-gradient-end: #e7e3d9;
-}
-
-.dark {
-  /* Dark mode gradients */
-  --bg-gradient-start: rgb(10, 17, 29);
-  --bg-gradient-end: #141328;
 }
 
 html, body, #root {
@@ -21,6 +12,5 @@ html, body, #root {
 }
 
 body {
-  background-image: linear-gradient(to bottom, var(--bg-gradient-start), var(--bg-gradient-end));
-  @apply text-gray-900 dark:text-gray-100;
+  @apply bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100;
 }
