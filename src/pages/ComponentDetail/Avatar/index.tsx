@@ -1,8 +1,16 @@
+import PageContainer from "../../../components/PageContainer";
+import Tabs from "../../../components/Tabs";
+import Title from "../../../components/Title";
+
 const Avatar = () => {
   return (
-    <div>
-      Avatar
-    </div>
+    <PageContainer>
+      <Title 
+        title="Avatar" 
+        size="large"
+      />
+      <Tabs />
+    </PageContainer>
   );
 }
 
