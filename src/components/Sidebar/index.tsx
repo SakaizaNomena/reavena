@@ -1,5 +1,5 @@
 import ComponentItem from "../ComponentItem";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import useSidebar from "./useSidebar";
 
 const Sidebar = () => { 
@@ -8,7 +8,8 @@ const Sidebar = () => {
     setActiveKey, 
     components 
   } = useSidebar();
-  
+  const navigate = useNavigate();
+
   return (
     <div className="w-64 h-full bg-zinc-200  dark:bg-gray-800 text-white rounded-2xl overflow-y-auto mb-4 pb-4">
       <Link to="/" className="block mb-6">
@@ -21,7 +22,10 @@ const Sidebar = () => {
          <ComponentItem 
            {...c}
            activeKey={activeKey}
-           onClick={(key) => setActiveKey(key)}
+           onClick={(key) => {
+            setActiveKey(key);
+            navigate(`/component/${key}`);
+           }}
           />
        </div> )}
       </div>
